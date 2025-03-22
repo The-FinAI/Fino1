@@ -54,7 +54,7 @@ class GPT:
         return self.call(content, additional_args)
 
 def load_fin_dataset(dataset):
-    if dataset in ['TheFinAI/flare-finqa',  'TheFinAI/flare-dm-simplong',  'TheFinAI/Regulation_XBRL_FinMath_test']:
+    if dataset in ['finqa',  'dm-simplong',  'XBRL_FinMath_test']:
         dataset = load_dataset(dataset, token='*****')
         df = pd.DataFrame(dataset['test'])
     else:
@@ -93,9 +93,9 @@ def main():
 def parse_args():
     """Parse command line arguments."""
     parser = argparse.ArgumentParser(description='Process dataset with LLM model')
-    parser.add_argument('--dataset', type=str, default='TheFinAI/flare-dm-simplong', help='Name of the HuggingFace dataset')
+    parser.add_argument('--dataset', type=str, default='dm-simplong', help='Name of the HuggingFace dataset')
     parser.add_argument('--model', type=str, default='deepseek-ai/DeepSeek-V3', help='Model name to use (e.g., gpt-4 or deepseek)')
-    parser.add_argument('--output_file_dir', type=str, default='/home/wz426/finllm/output_data', help='Output file name for predictions')
+    parser.add_argument('--output_file_dir', type=str, default='finllm/output_data', help='Output file name for predictions')
     
     return parser.parse_args()
 
