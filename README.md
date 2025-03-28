@@ -3,10 +3,10 @@
 <h1 align="center">🚀 Fino1: On the Transferability of Reasoning-Enhanced LLMs to Finance</h1>
 
 <p align="center">
-  <a href="">🤗 Training Data</a> |
-  <a href="">📄 Arxiv</a> |
-  <a href="">🤖 Model</a>
-  <a href="">🏆 Leaderboard</a>
+  <a href="https://huggingface.co/datasets/TheFinAI/Fino1_Reasoning_Path_FinQA">🤗 Training Data</a> |
+  <a href="https://arxiv.org/pdf/2502.08127">📄 Arxiv</a> |
+  <a href="https://huggingface.co/TheFinAI/Fino1-8B">🤖 Model</a>
+  <a href="https://huggingface.co/spaces/TheFinAI/open-finllm-reasoning-leaderboard">🏆 Leaderboard</a>
 </p>
 
 ---
@@ -18,9 +18,9 @@ Here, we utilized three evaluation datasets to assess the performance of our Fin
 
 | Dataset | Description |
 |---------|-------------|
-| **[FinQA]()** | FinQA is a large-scale dataset for numerical reasoning in finance, featuring expert-annotated QA pairs that require integrating structured and unstructured data from financial reports while handling complex domain-specific terminology. |
-| **[DocMath]()** | DocMath-Eval is a benchmark for evaluating LLMs' numerical reasoning over long specialized documents and tables, with the simpllong subset focusing on reasoning across multi-tiered financial or specialized tables within extended contexts. |
-| **[XBRL-Math]()** | XBRL-Math dataset evaluates LLMs' numerical reasoning in XBRL filings, requiring models to interpret structured financial data, US GAAP XBRL tags, equations, and hierarchical numerical relationships for accurate financial analysis. |
+| **[FinQA](https://huggingface.co/datasets/TheFinAI/FINQA_test_test)** | FinQA is a large-scale dataset for numerical reasoning in finance, featuring expert-annotated QA pairs that require integrating structured and unstructured data from financial reports while handling complex domain-specific terminology. |
+| **[DocMath](https://huggingface.co/datasets/yale-nlp/DocMath-Eval)** | DocMath-Eval is a benchmark for evaluating LLMs' numerical reasoning over long specialized documents and tables, with the simpllong subset focusing on reasoning across multi-tiered financial or specialized tables within extended contexts. |
+| **[XBRL-Math](https://huggingface.co/datasets/TheFinAI/Regulation_XBRL_FinMath_test)** | XBRL-Math dataset evaluates LLMs' numerical reasoning in XBRL filings, requiring models to interpret structured financial data, US GAAP XBRL tags, equations, and hierarchical numerical relationships for accurate financial analysis. |
 
 ### 🏆 Models Evaluated
 We compared our Fino1 model against 16 state-of-the-art large language models (LLMs).
@@ -56,14 +56,14 @@ Refer to [HuatuoGPT-o1](https://github.com/FreedomIntelligence/HuatuoGPT-o1), we
 
 - **Stage 2: Reinforcement Learning (RL)**
 
-HuatuoGPT-o1 provides a simple PPO script using the [trl](https://github.com/huggingface/trl) library. Below is an example for training an 8B model with PPO on an 8-GPU A100 machine. Ensure you first download [medical verifier](https://huggingface.co/FreedomIntelligence/medical_o1_verifier_3B) as the reward model.
+We provide a simple PPO script using the [trl](https://github.com/huggingface/trl) library. Below is an example for training an 8B model with PPO on an 8-GPU A100 machine. Ensure you first download [medical verifier](https://huggingface.co/FreedomIntelligence/medical_o1_verifier_3B) as the reward model.
 
 Please check [HuatuoGPT-o1](https://github.com/FreedomIntelligence/HuatuoGPT-o1) for more training details.
 
 # 🎯 Evaluation of all models
 
 ## Inference: Local Models  
-Model inference for local models is conducted using **[FinBen]()** with the **VLLM framework**.
+Model inference for local models is conducted using **[FinBen](https://github.com/The-FinAI/FinBen)** with the **VLLM framework**.
 
 ## Inference: API Models  
 For API-based models, evaluation is performed using the **`query_llm.py`** script.
@@ -111,4 +111,14 @@ If you find our work useful, please cite our paper:
 
 **BibTeX:**
 ```bibtex
+@misc{qian2025fino1transferabilityreasoningenhanced,
+      title={Fino1: On the Transferability of Reasoning Enhanced LLMs to Finance}, 
+      author={Lingfei Qian and Weipeng Zhou and Yan Wang and Xueqing Peng and Jimin Huang and Qianqian Xie},
+      year={2025},
+      eprint={2502.08127},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2502.08127}, 
+}
+
 
