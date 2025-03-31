@@ -52,7 +52,7 @@ We compared our Fino1 model against 16 state-of-the-art large language models (L
 | **[Llama3.1-8B-Instruct](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct)** | The Meta Llama 3.1 collection includes multilingual LLMs (8B, 70B, 405B) optimized for multilingual dialogue, outperforming many open-source and closed chat models on industry benchmarks. |
 | **[LIMO](https://huggingface.co/GAIR/LIMO)** | LIMO challenges the conventional wisdom in mathematical reasoning by demonstrating that models can achieve superior performance with significantly less but higher quality training data. |
 | **[s1-32B](https://huggingface.co/simplescaling/s1-32B)** | s1 is a reasoning model finetuned from Qwen2.5-32B-Instruct on just 1,000 examples. It matches o1-preview & exhibits test-time scaling via budget forcing. |
-| **[s1-32B](https://huggingface.co/simplescaling/s1-32B)** | s1 is a reasoning model finetuned from Qwen2.5-32B-Instruct on just 1,000 examples. It matches o1-preview & exhibits test-time scaling via budget forcing. |
+| **[FinR1-7B](https://huggingface.co/SUFE-AIFLM-Lab/Fin-R1)** | Fin-R1 is a large language model designed for complex reasoning tasks in the financial domain. It was developed and open-sourced jointly by the Financial Large Language Model Research Group (SUFE-AIFLM-Lab) at the School of Statistics and Data Science of Shanghai University of Finance and Economics, in collaboration with Fintopia. The model is based on Qwen2.5-7B-Instruct and fine-tuned using high-quality, verifiable financial reasoning questions. It has achieved state-of-the-art performance across multiple financial benchmarks. |
 
 
 ### 🧩 Reasoning Path Building
