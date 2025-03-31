@@ -4,8 +4,10 @@
 
 <p align="center">
   <a href="https://huggingface.co/datasets/TheFinAI/Fino1_Reasoning_Path_FinQA">🤗 Training Data</a> |
+  <a href="https://huggingface.co/datasets/TheFinAI/Fino1_Reasoning_Path_FinQA_v2">🤗 Training Data version 2</a> |
   <a href="https://arxiv.org/pdf/2502.08127">📄 Arxiv</a> |
-  <a href="https://huggingface.co/TheFinAI/Fino1-8B">🤖 Model</a>
+  <a href="https://huggingface.co/TheFinAI/Fino1-8B">🤖 8B-Model</a>
+  <a href="https://huggingface.co/TheFinAI/Fino1-14B">🤖 14B-Model</a>
   <a href="https://huggingface.co/spaces/TheFinAI/open-finllm-reasoning-leaderboard">🏆 Leaderboard</a>
 </p>
 
@@ -102,8 +104,9 @@ For the final evaluation, we used [DocMath-Eval](https://github.com/yale-nlp/Doc
 
 ## 🛠️ Updates
 
-- **[2025/02/12]** 🎉 We've trained Fino1 model and evaluated its performance recently
-
+- **[2025/02/12]** 🎉 We've trained Fino1-8B model and evaluated its performance.
+- **[2025/03/30]** 🎉 We've trained Fino1-14B model and evaluated its performance recently
+  
 ---
 
 ## 📄 Citation
