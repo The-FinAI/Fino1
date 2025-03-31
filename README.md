@@ -51,7 +51,8 @@ We compared our Fino1 model against 16 state-of-the-art large language models (L
 | **[Llama3-8B-Instruct](https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct)** | Meta released the Llama 3 family of 8B and 70B LLMs, optimized for dialogue, outperforming many open-source chat models while prioritizing helpfulness and safety. |
 | **[Llama3.1-8B-Instruct](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct)** | The Meta Llama 3.1 collection includes multilingual LLMs (8B, 70B, 405B) optimized for multilingual dialogue, outperforming many open-source and closed chat models on industry benchmarks. |
 | **[LIMO](https://huggingface.co/GAIR/LIMO)** | LIMO challenges the conventional wisdom in mathematical reasoning by demonstrating that models can achieve superior performance with significantly less but higher quality training data. |
-| **[LIMO](https://huggingface.co/GAIR/LIMO)** | LIMO challenges the conventional wisdom in mathematical reasoning by demonstrating that models can achieve superior performance with significantly less but higher quality training data. |
+| **[s1-32B](https://huggingface.co/simplescaling/s1-32B)** | s1 is a reasoning model finetuned from Qwen2.5-32B-Instruct on just 1,000 examples. It matches o1-preview & exhibits test-time scaling via budget forcing. |
+| **[s1-32B](https://huggingface.co/simplescaling/s1-32B)** | s1 is a reasoning model finetuned from Qwen2.5-32B-Instruct on just 1,000 examples. It matches o1-preview & exhibits test-time scaling via budget forcing. |
 
 
 ### 🧩 Reasoning Path Building
