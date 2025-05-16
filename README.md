@@ -7,7 +7,7 @@
   <a href="https://arxiv.org/pdf/2502.08127">📄 Arxiv</a> |
   <a href="https://huggingface.co/TheFinAI/Fin-o1-8B">🤖 8B-Model</a>
   <a href="https://huggingface.co/TheFinAI/Fin-o1-14B">🤖 14B-Model</a>
-  <a href="https://huggingface.co/spaces/TheFinAI/open-finllm-reasoning-leaderboard">🏆 Leaderboard</a>
+  <a href="https://huggingface.co/spaces/TheFinAI/open-finllm-reasoning-leaderboard">🏆 Leaderboard(FinReason)</a>
 </p>
 
 ---
@@ -57,7 +57,7 @@ We compared our Fino1 model against 16 state-of-the-art large language models (L
 ### 🧩 Reasoning Path Building
 For the reasoning path building and training part, we were inspired by [HuatuoGPT-o1](https://github.com/FreedomIntelligence/HuatuoGPT-o1)
 
-We release the reasoning path here: https://huggingface.co/datasets/TheFinAI/Fino1_Reasoning_Path_FinQA
+We release the reasoning path here: [FinCoT](https://huggingface.co/datasets/TheFinAI/FinCoT)
 
 ### 🏗️ How to Train Fino1
 Refer to [HuatuoGPT-o1](https://github.com/FreedomIntelligence/HuatuoGPT-o1), we applied two-stage way to train our Fino1 model
