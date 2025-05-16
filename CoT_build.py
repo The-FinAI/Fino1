@@ -14,7 +14,20 @@ import argparse
 import re
 import traceback
 import copy
+"""
+Most of the code is contributed by HuatuoGPT-o1.
 
+@misc{chen2024huatuogpto1medicalcomplexreasoning,
+      title={HuatuoGPT-o1, Towards Medical Complex Reasoning with LLMs}, 
+      author={Junying Chen and Zhenyang Cai and Ke Ji and Xidong Wang and Wanlong Liu and Rongsheng Wang and Jianye Hou and Benyou Wang},
+      year={2024},
+      eprint={2412.18925},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2412.18925}, 
+}
+
+"""
 class GPT:
     def __init__(self, model_name, api_url, api_key):
         self.model_name = model_name
