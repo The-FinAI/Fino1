@@ -3,8 +3,7 @@
 <h1 align="center">🚀 Fino1: On the Transferability of Reasoning-Enhanced LLMs to Finance</h1>
 
 <p align="center">
-  <a href="https://huggingface.co/datasets/TheFinAI/Fino1_Reasoning_Path_FinQA">🤗 Training Data</a> |
-  <a href="https://huggingface.co/datasets/TheFinAI/Fino1_Reasoning_Path_FinQA_v2">🤗 Training Data version 2</a> |
+  <a href="https://huggingface.co/datasets/TheFinAI/FinCoT">🤗 Training Data</a> |
   <a href="https://arxiv.org/pdf/2502.08127">📄 Arxiv</a> |
   <a href="https://huggingface.co/TheFinAI/Fino1-8B">🤖 8B-Model</a>
   <a href="https://huggingface.co/TheFinAI/Fino1-14B">🤖 14B-Model</a>
