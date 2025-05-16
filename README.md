@@ -62,12 +62,10 @@ We release the reasoning path here: https://huggingface.co/datasets/TheFinAI/Fin
 ### 🏗️ How to Train Fino1
 Refer to [HuatuoGPT-o1](https://github.com/FreedomIntelligence/HuatuoGPT-o1), we applied two-stage way to train our Fino1 model
 - **Stage 1: Supervised Fine-Tuning (SFT)**
-
+We use [HuatuoGPT-o1](https://github.com/FreedomIntelligence/HuatuoGPT-o1) for SFT, please check the code for more training details.
 - **Stage 2: Reinforcement Learning (RL)**
+We use the code from [open-r1](https://github.com/huggingface/open-r1.git) for the GRPO, please check the code for more training details.
 
-We provide a simple PPO script using the [trl](https://github.com/huggingface/trl) library. Below is an example for training an 8B model with PPO on an 8-GPU A100 machine. Ensure you first download [medical verifier](https://huggingface.co/FreedomIntelligence/medical_o1_verifier_3B) as the reward model.
-
-Please check [HuatuoGPT-o1](https://github.com/FreedomIntelligence/HuatuoGPT-o1) for more training details.
 
 # 🎯 Evaluation of all models
 
