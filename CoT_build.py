@@ -15,7 +15,7 @@ import re
 import traceback
 import copy
 """
-Most of the code is contributed by HuatuoGPT-o1.
+Most of the code is contributed by HuatuoGPT-o1, please cite this if you use this code.
 
 @misc{chen2024huatuogpto1medicalcomplexreasoning,
       title={HuatuoGPT-o1, Towards Medical Complex Reasoning with LLMs}, 
