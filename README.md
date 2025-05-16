@@ -5,8 +5,8 @@
 <p align="center">
   <a href="https://huggingface.co/datasets/TheFinAI/FinCoT">🤗 Training Data</a> |
   <a href="https://arxiv.org/pdf/2502.08127">📄 Arxiv</a> |
-  <a href="https://huggingface.co/TheFinAI/Fino1-8B">🤖 8B-Model</a>
-  <a href="https://huggingface.co/TheFinAI/Fino1-14B">🤖 14B-Model</a>
+  <a href="https://huggingface.co/TheFinAI/Fin-o1-8B">🤖 8B-Model</a>
+  <a href="https://huggingface.co/TheFinAI/Fin-o1-14B">🤖 14B-Model</a>
   <a href="https://huggingface.co/spaces/TheFinAI/open-finllm-reasoning-leaderboard">🏆 Leaderboard</a>
 </p>
 
