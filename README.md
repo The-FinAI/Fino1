@@ -1,30 +1,51 @@
+<div align="center">
 
-<!-- Title -->
-<h1 align="center">🚀 Fino1: On the Transferability of Reasoning LLMs and Reinforcement Learning to Finance</h1>
+<h1>Fino1</h1>
 
-<p align="center">
-  <a href="https://huggingface.co/datasets/TheFinAI/FinCoT">🤗 Training Data</a> |
-  <a href="https://arxiv.org/pdf/2502.08127">📄 Arxiv</a> |
-  <a href="https://huggingface.co/TheFinAI/Fin-o1-8B">🤖 8B-Model</a>
-  <a href="https://huggingface.co/TheFinAI/Fin-o1-14B">🤖 14B-Model</a>
-  <a href="https://huggingface.co/spaces/TheFinAI/open-finllm-reasoning-leaderboard">🏆 Leaderboard(FinReason)</a>
+<p><b>On the Transferability of Reasoning-Enhanced LLMs and Reinforcement Learning to Finance</b></p>
+
+<p>
+  <a href="https://arxiv.org/abs/2502.08127"><img src="https://img.shields.io/badge/arXiv-2502.08127-b31b1b.svg" alt="arXiv"></a>
+  <a href="https://huggingface.co/collections/TheFinAI/fino1-fin-o1-financial-reasoning-682702bbd25a7ef4512df24d"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Collection-yellow?logo=huggingface" alt="Hugging Face Collection"></a>
+  <a href="https://huggingface.co/datasets/TheFinAI/FinCoT"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Dataset-FinCoT-yellow?logo=huggingface" alt="FinCoT dataset"></a>
+  <a href="https://huggingface.co/spaces/TheFinAI/open-finllm-reasoning-leaderboard"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Leaderboard-FinReason-yellow?logo=huggingface" alt="FinReason Leaderboard"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License: MIT"></a>
 </p>
 
----
+<p>
+  <a href="https://arxiv.org/abs/2502.08127">Paper</a> ·
+  <a href="https://huggingface.co/datasets/TheFinAI/FinCoT">Data</a> ·
+  <a href="https://huggingface.co/collections/TheFinAI/fino1-fin-o1-financial-reasoning-682702bbd25a7ef4512df24d">Models</a> ·
+  <a href="https://huggingface.co/spaces/TheFinAI/open-finllm-reasoning-leaderboard">Leaderboard</a>
+</p>
 
-## 📈 Overview
+</div>
 
-### 📂 Datasets Used
-Here, we utilized three evaluation datasets to assess the performance of our Fino1 model.
+## Overview
+
+Fino1 studies how well reasoning-enhanced LLMs and reinforcement learning transfer to financial tasks. We build financial reasoning paths ([FinCoT](https://huggingface.co/datasets/TheFinAI/FinCoT)), train Fino1 models with a two-stage recipe (supervised fine-tuning followed by GRPO reinforcement learning), and evaluate them against a broad set of general-purpose and reasoning LLMs on FinQA, DocMath-Eval and XBRL-Math.
+
+## News
+
+- **[2025/03/30]** We've trained the Fino1-14B model and evaluated its performance.
+- **[2025/02/12]** We've trained the Fino1-8B model and evaluated its performance.
+
+## Datasets
+
+We use three evaluation datasets to assess the performance of our Fino1 model.
 
 | Dataset | Description |
 |---------|-------------|
-| **[FinQA](https://huggingface.co/datasets/TheFinAI/FINQA_test_test)** | FinQA is a large-scale dataset for numerical reasoning in finance, featuring expert-annotated QA pairs that require integrating structured and unstructured data from financial reports while handling complex domain-specific terminology. |
-| **[DocMath](https://huggingface.co/datasets/yale-nlp/DocMath-Eval)** | DocMath-Eval(Simplong; Complong) is a benchmark for evaluating LLMs' numerical reasoning over long specialized documents and tables, with the complong subset focusing on reasoning across multi-tiered financial or specialized tables within extended contexts. |
-| **[XBRL-Math](https://huggingface.co/datasets/TheFinAI/Regulation_XBRL_FinMath_test)** | XBRL-Math dataset evaluates LLMs' numerical reasoning in XBRL filings, requiring models to interpret structured financial data, US GAAP XBRL tags, equations, and hierarchical numerical relationships for accurate financial analysis. |
+| **[FinQA](https://huggingface.co/datasets/TheFinAI/en-finqa-reasoning)** | FinQA is a large-scale dataset for numerical reasoning in finance, featuring expert-annotated QA pairs that require integrating structured and unstructured data from financial reports while handling complex domain-specific terminology. |
+| **[DocMath](https://huggingface.co/datasets/yale-nlp/DocMath-Eval)** | DocMath-Eval (Simplong; Complong) is a benchmark for evaluating LLMs' numerical reasoning over long specialized documents and tables, with the Complong subset focusing on reasoning across multi-tiered financial or specialized tables within extended contexts. |
+| **XBRL-Math** | The XBRL-Math dataset evaluates LLMs' numerical reasoning in XBRL filings, requiring models to interpret structured financial data, US GAAP XBRL tags, equations, and hierarchical numerical relationships for accurate financial analysis. |
 
-### 🏆 Models Evaluated
+## Models Evaluated
+
 We compared our Fino1 model against 16 state-of-the-art large language models (LLMs).
+
+<details>
+<summary>Show the full list of evaluated models</summary>
 
 | Model | Description |
 |-------|------------|
@@ -52,36 +73,38 @@ We compared our Fino1 model against 16 state-of-the-art large language models (L
 | **[LIMO](https://huggingface.co/GAIR/LIMO)** | LIMO challenges the conventional wisdom in mathematical reasoning by demonstrating that models can achieve superior performance with significantly less but higher quality training data. |
 | **[s1-32B](https://huggingface.co/simplescaling/s1-32B)** | s1 is a reasoning model finetuned from Qwen2.5-32B-Instruct on just 1,000 examples. It matches o1-preview & exhibits test-time scaling via budget forcing. |
 | **[FinR1-7B](https://huggingface.co/SUFE-AIFLM-Lab/Fin-R1)** | Fin-R1 is a large language model designed for complex reasoning tasks in the financial domain. It was developed and open-sourced jointly by the Financial Large Language Model Research Group (SUFE-AIFLM-Lab) at the School of Statistics and Data Science of Shanghai University of Finance and Economics, in collaboration with Fintopia. The model is based on Qwen2.5-7B-Instruct and fine-tuned using high-quality, verifiable financial reasoning questions. It has achieved state-of-the-art performance across multiple financial benchmarks. |
+</details>
 
+## Reasoning Path Building
 
-### 🧩 Reasoning Path Building
-For the reasoning path building and training part, we were inspired by [HuatuoGPT-o1](https://github.com/FreedomIntelligence/HuatuoGPT-o1)
+For the reasoning path building and training part, we were inspired by [HuatuoGPT-o1](https://github.com/FreedomIntelligence/HuatuoGPT-o1). See [`CoT_build.py`](CoT_build.py) and [`process_data.ipynb`](process_data.ipynb).
 
-We release the reasoning path here: [FinCoT](https://huggingface.co/datasets/TheFinAI/FinCoT)
+We release the reasoning paths here: [FinCoT](https://huggingface.co/datasets/TheFinAI/FinCoT).
 
-### 🏗️ How to Train Fino1
-Refer to [HuatuoGPT-o1](https://github.com/FreedomIntelligence/HuatuoGPT-o1), we applied two-stage way to train our Fino1 model
-- **Stage 1: Supervised Fine-Tuning (SFT)**
-We use [HuatuoGPT-o1](https://github.com/FreedomIntelligence/HuatuoGPT-o1) for SFT, please check the code for more training details.
-- **Stage 2: Reinforcement Learning (RL)**
-We use the code from [open-r1](https://github.com/huggingface/open-r1.git) for the GRPO, please check the code for more training details.
+## Training
 
+Following [HuatuoGPT-o1](https://github.com/FreedomIntelligence/HuatuoGPT-o1), we train Fino1 in two stages:
 
-# 🎯 Evaluation of all models
+- **Stage 1: Supervised Fine-Tuning (SFT).** We use [HuatuoGPT-o1](https://github.com/FreedomIntelligence/HuatuoGPT-o1) for SFT; please check its code for more training details.
+- **Stage 2: Reinforcement Learning (RL).** We use the code from [open-r1](https://github.com/huggingface/open-r1) for GRPO; please check its code for more training details.
 
-## Inference: Local Models  
-Model inference for local models is conducted using **[FinBen](https://github.com/The-FinAI/FinBen)** with the **VLLM framework**.
+## Evaluation
 
-## Inference: API Models  
-For API-based models, evaluation is performed using the **`query_llm.py`** script.
+### Inference: local models
 
-## Evaluation 
-For the final evaluation, we used [DocMath-Eval](https://github.com/yale-nlp/DocMath-Eval) to first use GPT to extract final answers from the result and then evaluate the correctness of the answer.
+Model inference for local models is conducted using **[FinBen](https://github.com/The-FinAI/FinBen)** with the **vLLM** framework.
 
----
+### Inference: API models
+
+For API-based models, evaluation is performed using the [`query_llm.py`](query_llm.py) script.
+
+### Scoring
+
+For the final evaluation, we used [DocMath-Eval](https://github.com/yale-nlp/DocMath-Eval) to first use GPT to extract final answers from the results and then evaluate the correctness of the answers.
 
 ## Key Results
-### 📊 Performance of Different LLMs on Financial Datasets
+
+### Performance of different LLMs on financial datasets
 
 | **Models** | **FinQA** | **DocMath-Simplong** | **XBRL-Math** | **DocMath-Complong** | **Average** |
 |------------|-----------|----------------------|---------------|----------------------|-------------|
@@ -91,7 +114,7 @@ For the final evaluation, we used [DocMath-Eval](https://github.com/yale-nlp/Doc
 | **DeepSeek-V3** | 73.20 | 53.00 | 76.67 | **42.33** | **61.30** |
 | **DeepSeek-R1** | 65.13 | 53.00 | 86.67 | 38.67 | 60.87 |
 | **GPT-4.5** | 68.94 | 59.00 | 74.44 | 39.33 | 60.43 |
-| **Meta-Llama-4-Scount** | 70.45 | 52.00 | **88.89** | 0.67 | 53.00 |
+| **Meta-Llama-4-Scout** | 70.45 | 52.00 | **88.89** | 0.67 | 53.00 |
 | **Meta-Llama-3-70B-Instruct** | 58.92 | 41.00 | 56.67 | 13.67 | 42.57 |
 | **Llama-3.1-70B-Instruct** | 63.18 | 48.00 | 63.33 | 34.33 | 52.21 |
 | **Llama-3.3-70B-Instruct** | 68.15 | 54.00 | 70.00 | 32.00 | 56.04 |
@@ -113,22 +136,23 @@ For the final evaluation, we used [DocMath-Eval](https://github.com/yale-nlp/Doc
 | **Fino1-8B** | 73.03 | 56.00 | 84.44 | 26.33 | 59.95 |
 | **Fino1-14B** | **74.18** | 55.00 | 87.78 | 27.33 | 61.07 |
 
+## Resources on Hugging Face
 
+| Resource | Type | Link |
+| --- | --- | --- |
+| Fino1 / Fin-o1 financial reasoning | Collection | [TheFinAI/fino1-fin-o1-financial-reasoning](https://huggingface.co/collections/TheFinAI/fino1-fin-o1-financial-reasoning-682702bbd25a7ef4512df24d) |
+| FinCoT (reasoning paths / training data) | Dataset | [TheFinAI/FinCoT](https://huggingface.co/datasets/TheFinAI/FinCoT) |
+| FinQA (Fino1 reasoning-eval format) | Dataset | [TheFinAI/en-finqa-reasoning](https://huggingface.co/datasets/TheFinAI/en-finqa-reasoning) |
+| Fino1-8B | Model | [TheFinAI/Fino1-8B](https://huggingface.co/TheFinAI/Fino1-8B) |
+| Fino1-14B | Model | [TheFinAI/Fino1-14B](https://huggingface.co/TheFinAI/Fino1-14B) |
+| Fin-o1-8B | Model | [TheFinAI/Fin-o1-8B](https://huggingface.co/TheFinAI/Fin-o1-8B) |
+| Fin-o1-14B | Model | [TheFinAI/Fin-o1-14B](https://huggingface.co/TheFinAI/Fin-o1-14B) |
+| Open FinLLM Reasoning Leaderboard (FinReason) | Space | [TheFinAI/open-finllm-reasoning-leaderboard](https://huggingface.co/spaces/TheFinAI/open-finllm-reasoning-leaderboard) |
 
+## Citation
 
----
-
-## 🛠️ Updates
-
-- **[2025/02/12]** 🎉 We've trained Fino1-8B model and evaluated its performance.
-- **[2025/03/30]** 🎉 We've trained Fino1-14B model and evaluated its performance recently
-  
----
-
-## 📄 Citation
 If you find our work useful, please cite our paper:
 
-**BibTeX:**
 ```bibtex
 @misc{qian2025fino1transferabilityreasoningenhanced,
       title={Fino1: On the Transferability of Reasoning Enhanced LLMs to Finance}, 
@@ -139,5 +163,12 @@ If you find our work useful, please cite our paper:
       primaryClass={cs.CL},
       url={https://arxiv.org/abs/2502.08127}, 
 }
+```
 
+## License
 
+The code in this repository is released under the [MIT License](LICENSE). Datasets and models on Hugging Face keep their own licenses, stated on each card.
+
+---
+
+<p align="center">Built by <a href="https://thefin.ai">The Fin AI</a> · <a href="https://huggingface.co/TheFinAI">Hugging Face</a> · <a href="https://github.com/The-FinAI">GitHub</a></p>
